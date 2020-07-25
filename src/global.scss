@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+$color-secundario:#0095f6;
+$color-claro: #FFF;
+$gris-1: #fafafa;
+$gris-2: #dbdbdb;
+$gris-3: #c7c7c7;
+$gris-4: #8e8e8e;
+$color-oscuro: #000;
+
+$Fuente1: 'Roboto', sans-serif;
+
+
+body {
+  margin: 0;
+  color: $color-oscuro;
+  background-color: $gris-1;
+  font-family: $Fuente1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: $color-oscuro;
+}
+
+.circular {
+  border-radius: 50%;
+  overflow: hidden;
+}
