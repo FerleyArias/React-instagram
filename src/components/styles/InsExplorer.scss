@@ -1,0 +1,41 @@
+@import '../../variables_mixins.scss';
+
+.explorer {
+  background-color: $gris-1;
+  border: 1px solid $gris-2;
+  color: $gris-4;
+  height: 28px;
+  width: 215px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  .explorer__search {
+    font-size: 10px;
+  }
+  &--disabled {
+    justify-content: center;
+    padding: 7px;
+  }
+  &--active {
+    justify-content: space-between;
+    padding: 3px 10px;
+    input {
+      border: 0;
+      background: transparent;
+      width: 150px;
+    }
+    input:focus {
+      outline: 0;
+    }
+    &__quit {
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

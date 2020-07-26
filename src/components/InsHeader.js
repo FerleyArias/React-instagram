@@ -2,19 +2,17 @@ import React from 'react'
 
 import './styles/InsHeader.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import InsExplorer from './InsExplorer'
 
 function InsHeader () {
   return (
     <header className="header">
       <div className="header__container">
         <div className="header__logo">
-          <img src="" alt=""/>
+          <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt=""/>
         </div>
-        <div className="header__explorer--disabled">
-          <span></span>
-          <span></span>
-        </div>
-        <nav className="menu-">
+        <InsExplorer/>
+        <nav className="menuIcons">
           <a href="">
             <FontAwesomeIcon icon={['fas', 'home']}/>
           </a>

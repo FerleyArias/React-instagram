@@ -1,5 +1,14 @@
-@import '../../global.scss';
+@import '../../variables_mixins.scss';
 
 .header {
   background: $color-claro;
+  height: 54px;
+  &__container {
+    width: 100%;
+    max-width: 975px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
